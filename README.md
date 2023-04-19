@@ -1,1 +1,3 @@
-# NLP-recommand_system_study
+# 자연어 처리 및 추천시스템
+## 머신러닝
+## 
