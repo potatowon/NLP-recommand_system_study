@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 메타 데이터는 형식을 지정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭 이름이 타이틀</title> <!-- 탭 이름 -->
+</head>
+
+<body>
+    안녕하세요.
+    <h3>김예원입니다.</h3>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h3>제목3</h3>
+    <h4>제목4</h4>
+    <h5>제목5</h5>
+    <!-- 브라우저는 바디를 랜더링 한다.-->
+    <!-- <a href=""></a> hiper referece 의 약자-->
+    <a href="link_page.html"></a>
+
+
+
+
+
+    <!--form 태그!
+        action : url 이고 method http method를 의미 
+form tag 와 input 태그는 사용자와의 interaction을 위한 도구-->
+    <form action="sample" method="POST">
+        <input type="text" name="userid">
+        <input type="password" name="userpwd" id="">
+
+        <div>
+            <input type="radio" name="gender" /> 여자 <!-- 하나만 선택 가능-->
+            <input type="radio" name="gender" /> 남자
+        </div>
+
+        <div>
+            <input type="checkbox" name="hobby"> 등산 <!-- 여러개 선택가능-->
+            <input type="checkbox" name="hobby"> 독서
+            <input type="checkbox" name="hobby"> 운동
+        </div>
+        <!-- 인풋 타입에 따라서 Text 형식인지 pwd 의 형식인지 달라진다. -->
+        <!-- form 태그의 매소드는 GET POST 만 존재 
+ GET 은 데이터를 전송할 때 url 에 담아서 전송 file:///Users/kim-yewon/html_css/sample?userid=admin123&userpwd=ADMIN123
+
+POST 는 데이터를 body 로 전송한다. payload가 바디임. 여기서 데이터 전송내용을 볼 수 있다.
+그래서 url 에 없다 로그인은 post 요청, 검색은 get 요청.-->
+        <!-- submit 은 form 에 감싸져있는 것을 묶어서 서버에 전송 -->
+        <input type="submit" value="제출">
+
+        <select name="city" id="">
+            <option value="seoul">서울</option>
+            <option value="kyengi">경기</option>
+            <option value="busan">부산</option>
+
+        </select>
+
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+    </form>
+
+    <!-- <img src="logo-python.png" alt="파이썬 로그"> -->
+    <!-- alt : 이미지가 깨질 경우 뜨는 문자를 지정한다.  -->
+
+    <ul>
+        <li>신윤수</li>
+        <li>신인호</li>
+        <li>김예원</li>
+    </ul>
+    <ol>
+        <li>신윤수</li>
+        <li>신인호</li>
+        <li>김예원</li>
+    </ol>
+
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>이름</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>김예원</td>
+                <td>설명입니다</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>신윤수</td>
+                <td>설명입니다</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
